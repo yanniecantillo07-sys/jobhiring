@@ -188,7 +188,7 @@
         /* Central Apply Button */
         .apply-container {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 50px;
         }
 
         .btn-apply-main {
@@ -215,7 +215,7 @@
             border: 2px solid var(--light-blue);
             border-radius: 30px;
             padding: 50px;
-            margin-bottom: 80px;
+            margin-bottom: 50px;
             box-shadow: 0 10px 30px rgba(144, 202, 249, 0.2);
         }
 
@@ -236,6 +236,63 @@
             color: var(--text-muted);
             margin-bottom: 15px;
         }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--white);
+            border: 2px solid var(--mid-blue);
+            border-radius: 30px;
+            padding: 50px;
+            margin-bottom: 80px;
+            box-shadow: 0 10px 30px rgba(144, 202, 249, 0.2);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .contact-section p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--white);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .email-btn { background-color: var(--primary-orange); }
+        .email-btn:hover { background-color: var(--orange-hover); }
+
+        .fb-btn { background-color: #1877F2; }
+        .fb-btn:hover { background-color: #166FE5; }
+
+        .ig-btn {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .ig-btn:hover { filter: brightness(1.1); }
 
         /* Footer */
         footer {
@@ -267,12 +324,16 @@
             .job-grid {
                 grid-template-columns: 1fr; 
             }
-            .privacy-section {
+            .contact-section, .privacy-section {
                 padding: 30px 20px;
             }
-            .btn-apply-main {
+            .btn-apply-main, .social-btn {
                 width: 100%;
                 padding: 16px 20px;
+            }
+            .social-links {
+                flex-direction: column;
+                gap: 15px;
             }
         }
     </style>
@@ -284,6 +345,7 @@
         <div class="nav-links">
             <a href="#openings">Open Roles</a>
             <a href="#privacy">Privacy Policy</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
@@ -390,6 +452,18 @@
             
             <h3>4. Data Protection and Sharing</h3>
             <p>Your data is kept safe and secure within Google's infrastructure. Aside from forwarding your application to the relevant hiring companies, we do not sell or share your personal information with outside third parties.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <p>Have questions about the roles or the application process? Feel free to reach out to me directly!</p>
+
+            <div class="social-links">
+                <a href="mailto:yanniecantillo07@gmail.com" class="social-btn email-btn">✉️ Email Me</a>
+                <a href="https://www.facebook.com/yannie.cantillo.2025" target="_blank" rel="noopener noreferrer" class="social-btn fb-btn">📘 Facebook</a>
+                <a href="https://www.instagram.com/brr_yanii/" target="_blank" rel="noopener noreferrer" class="social-btn ig-btn">📸 Instagram</a>
+            </div>
         </div>
     </div>
 
