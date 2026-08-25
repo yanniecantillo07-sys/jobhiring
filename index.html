@@ -10,10 +10,10 @@
             /* Expanded Orange, Light Blue, and White Palette */
             --primary-orange: #FF7F3F; 
             --orange-hover: #E66A2C;
-            --page-bg-blue: #F0F8FF; /* Soft Alice Blue for the whole page */
+            --page-bg-blue: #F0F8FF; 
             --light-blue: #E3F2FD;
             --mid-blue: #90CAF9;
-            --deep-blue: #1976D2; /* Added for readable contrast against light blue */
+            --deep-blue: #1976D2; 
             --white: #FFFFFF;
             
             /* Text colors */
@@ -29,7 +29,6 @@
         }
 
         body {
-            /* Changed to a soft blue to add more light blue to the design */
             background-color: var(--page-bg-blue); 
             color: var(--text-dark);
             line-height: 1.6;
@@ -77,7 +76,6 @@
         .hero {
             text-align: center;
             padding: 80px 20px;
-            /* Enhanced gradient with more blue */
             background: linear-gradient(135deg, var(--mid-blue), var(--light-blue));
             color: var(--text-dark);
             border-bottom-left-radius: 40px;
@@ -125,7 +123,6 @@
         }
 
         .job-card {
-            /* Added a subtle blue gradient to the cards */
             background: linear-gradient(to bottom, var(--white), var(--light-blue));
             border-radius: 20px;
             padding: 25px;
@@ -188,7 +185,7 @@
         /* Central Apply Button */
         .apply-container {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 50px; 
         }
 
         .btn-apply-main {
@@ -243,7 +240,7 @@
             border: 2px solid var(--mid-blue);
             border-radius: 30px;
             padding: 50px;
-            margin-bottom: 80px;
+            margin-bottom: 80px; 
             box-shadow: 0 10px 30px rgba(144, 202, 249, 0.2);
             text-align: center;
         }
@@ -285,14 +282,12 @@
 
         .email-btn { background-color: var(--primary-orange); }
         .email-btn:hover { background-color: var(--orange-hover); }
-
-        .fb-btn { background-color: #1877F2; }
+        
+        .fb-btn { background-color: #1877F2; } 
         .fb-btn:hover { background-color: #166FE5; }
-
-        .ig-btn {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        }
-        .ig-btn:hover { filter: brightness(1.1); }
+        
+        .reddit-btn { background-color: #FF4500; }
+        .reddit-btn:hover { background-color: #E03D00; }
 
         /* Footer */
         footer {
@@ -432,11 +427,12 @@
         <!-- Direct Google Form Link Button -->
         <div class="apply-container">
             <!-- REPLACE 'YOUR_GOOGLE_FORM_LINK_HERE' with your actual Google form URL -->
-            <a id="apply" href="https://forms.gle/ECEe4HnXpBwWEuWB6" target="_blank" rel="noopener noreferrer" class="btn-apply-main">
+            <a id="apply" href="https://forms.gle/YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" rel="noopener noreferrer" class="btn-apply-main">
                 Apply Now for Any Role! ≫
             </a>
         </div>
 
+        <!-- Privacy Policy Section -->
         <div id="privacy" class="privacy-section">
             <h2>Privacy Policy & Disclaimer</h2>
             <p>Your trust is important. This guide explains how your information is handled and clarifies the nature of this website.</p>
@@ -458,13 +454,19 @@
         <div id="contact" class="contact-section">
             <h2>Get In Touch</h2>
             <p>Have questions about the roles or the application process? Feel free to reach out to me directly!</p>
-
+            
             <div class="social-links">
+                <!-- Connects directly to your email -->
                 <a href="mailto:yanniecantillo07@gmail.com" class="social-btn email-btn">✉️ Email Me</a>
+                
+                <!-- Connects to your Facebook profile -->
                 <a href="https://www.facebook.com/yannie.cantillo.2025" target="_blank" rel="noopener noreferrer" class="social-btn fb-btn">📘 Facebook</a>
+                
+                <!-- Connects to your Reddit profile (replace URL with your profile link) -->
                 <a href="https://www.reddit.com/user/PirateAffectionate40/" target="_blank" rel="noopener noreferrer" class="social-btn reddit-btn">🤖 Reddit</a>
             </div>
         </div>
+
     </div>
 
     <footer>
